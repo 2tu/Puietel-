@@ -33,7 +33,7 @@ public class PropertiesFileCopyUtils {
 		//如果文件不存在属于首次加载，则将包中的配置内容拷贝到当前目录
 		if (isFirstTime) {
 			try {
-				InputStream in = loadFile(PropertiesFileCopyUtils.class, "/com/foxhis/itf/ctrlroom/ostv/config/"+foxprofile);
+				InputStream in = loadFile(PropertiesFileCopyUtils.class, "/com/foxhis/itf/ctrlroom/puietel/config/"+foxprofile);
 				FileUtils.copyInputStreamToFile(in, f);
 			} catch (Exception e) {
 				String message = MessageFormat.format("无法创建客控配置[{0}]，请联系系统管理员", new Object[] { foxprofile });
